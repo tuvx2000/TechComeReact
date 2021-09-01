@@ -17,7 +17,7 @@ export default SearchItem = ({ item, navigation }) => {
         <Ionicons
           name='ios-search'
           size={22}
-          color={Colors.grey}
+          color={Colors.red}
           style={{ marginRight: 20 }}
         />
         <Image style={styles.image} source={{ uri: item.thumb }} />

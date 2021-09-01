@@ -166,7 +166,7 @@ export class Header extends React.Component {
                 <Ionicons
                   name='ios-menu'
                   size={30}
-                  color={Colors.lighter_green}
+                  color={Colors.red}
                 />
               </TouchableOpacity>
               <View>
@@ -202,7 +202,7 @@ export class Header extends React.Component {
                     <Ionicons
                       name='ios-arrow-back'
                       size={25}
-                      color={Colors.light_green}
+                      color={Colors.red}
                     />
                   </TouchableOpacity>
                 </Animated.View>
@@ -304,7 +304,7 @@ const styles = StyleSheet.create({
     width: 35,
     height: 35,
     borderRadius: 35,
-    backgroundColor: Colors.lighter_green,
+    backgroundColor: Colors.red,
     borderWidth: 1,
     borderColor: Colors.white,
     flexDirection: 'row',

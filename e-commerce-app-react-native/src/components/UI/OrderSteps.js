@@ -9,14 +9,14 @@ const secondIndicatorStyles = {
   currentStepIndicatorSize: 40,
   separatorStrokeWidth: 2,
   currentStepStrokeWidth: 1,
-  stepStrokeCurrentColor: Colors.lighter_green,
+  stepStrokeCurrentColor: Colors.red,
   stepStrokeWidth: 1,
   separatorStrokeFinishedWidth: 1,
   stepStrokeFinishedColor: "#ffffff",
-  stepStrokeUnFinishedColor: Colors.lighter_green,
-  separatorFinishedColor: Colors.lighter_green,
-  separatorUnFinishedColor: Colors.lighter_green,
-  stepIndicatorFinishedColor: Colors.lighter_green,
+  stepStrokeUnFinishedColor: Colors.red,
+  separatorFinishedColor: Colors.red,
+  separatorUnFinishedColor: Colors.red,
+  stepIndicatorFinishedColor: Colors.red,
   stepIndicatorUnFinishedColor: "#ffffff",
   stepIndicatorCurrentColor: "#ffffff",
 };
@@ -24,7 +24,7 @@ const secondIndicatorStyles = {
 const getStepIndicatorIconConfig = ({ position, stepStatus }) => {
   const iconConfig = {
     name: "feed",
-    color: stepStatus === "finished" ? "#ffffff" : Colors.lighter_green,
+    color: stepStatus === "finished" ? "#ffffff" : Colors.red,
     size: 14,
   };
   switch (position) {

@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     width: DOT_SIZE * 0.3,
     height: DOT_SIZE * 0.3,
     borderRadius: DOT_SIZE * 0.15,
-    backgroundColor: "rgba(198, 198, 198, 0.5)",
+    backgroundColor: "#e74c3c",
   },
   paginationDotContainer: {
     width: DOT_SIZE,
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     height: DOT_SIZE * 0.5,
     zIndex: 101,
     borderRadius: DOT_SIZE * 0.25,
-    backgroundColor: Colors.lighter_green,
+    backgroundColor: "#2c3e50",
   },
 });
 

@@ -70,13 +70,14 @@ export class ProductItem extends React.PureComponent {
           <View style={styles.info}>
             <View style={styles.rate}>
               <AntDesign name='star' color='#fed922' size={15} />
-              <Text style={styles.score}>5.0</Text>
+              <AntDesign name='loading' color='#fed922' size={15} />
+              <Text style={styles.score}>4.5</Text>
             </View>
             <NumberFormat price={item.price} />
           </View>
           <View style={{ marginHorizontal: 5 }}>
             <TouchableOpacity style={styles.btn} onPress={toDetail}>
-              <CustomText style={styles.detailBtn}>Xem chi tiết</CustomText>
+              <CustomText style={styles.detailBtn}>Chi tiết SP</CustomText>
             </TouchableOpacity>
           </View>
         </BlurView>
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
   },
   name: {
     marginTop: 3,
-    color: Colors.lighter_green,
+    color: Colors.red,
     textAlign: "center",
     fontWeight: "500",
   },
@@ -141,10 +142,10 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     borderRadius: 5,
     borderWidth: 1,
-    borderColor: Colors.lighter_green,
+    borderColor: Colors.grey,
   },
   detailBtn: {
-    color: Colors.lighter_green,
+    color: Colors.purple,
     marginRight: 5,
   },
 });

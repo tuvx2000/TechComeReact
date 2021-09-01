@@ -15,6 +15,7 @@ import PropTypes from "prop-types";
 
 export class CategorySection extends React.PureComponent {
   render() {
+    // ở đây coi dữ liệu format ra răng
     const { data, name, bg, navigation } = this.props;
     const rings = data.filter((ring) => ring.type === "ring");
     const bracelets = data.filter((bracelet) => bracelet.type === "bracelet");
@@ -89,10 +90,12 @@ const styles = StyleSheet.create({
   titleHeader: {
     marginHorizontal: 10,
     marginBottom: 5,
+    alignItems: "center",
+    justifyContent: "center",
   },
   title: {
     fontSize: 18,
-    color: Colors.light_green,
+    color: Colors.red,
     fontWeight: "500",
   },
   list: {
@@ -113,6 +116,6 @@ const styles = StyleSheet.create({
   },
   seeMoreText: {
     fontSize: 14,
-    color: Colors.lighter_green,
+    color: Colors.red,
   },
 });
