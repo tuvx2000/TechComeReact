@@ -2,7 +2,11 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19001,
+<<<<<<< Updated upstream
   "packagerPid": 9032,
+=======
+  "packagerPid": 15656,
+>>>>>>> Stashed changes
   "expoServerNgrokUrl": null,
   "packagerNgrokUrl": null,
   "ngrokPid": null,
