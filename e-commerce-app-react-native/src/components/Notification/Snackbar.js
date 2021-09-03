@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     zIndex: 1000,
   },
   snackbar: {
-    backgroundColor: Colors.blue,
+    backgroundColor: "#95a5a6",
     fontSize: 16,
     height: 50,
   },
