@@ -1,1 +1,0 @@
-{"ast":null,"code":"export * from \"./TouchIdScreen\";","map":{"version":3,"sources":["D:/2020-2021/II/aws/project/TechComeReact/e-commerce-app-react-native/src/screens/TouchIdScreen/index.js"],"names":[],"mappings":"AAAA","sourcesContent":["export * from \"./TouchIdScreen\";\r\n"]},"metadata":{},"sourceType":"module"}

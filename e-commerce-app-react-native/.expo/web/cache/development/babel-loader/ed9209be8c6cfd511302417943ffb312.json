@@ -1,1 +1,0 @@
-{"ast":null,"code":"export * from \"./ForgetPasswordScreen\";","map":{"version":3,"sources":["D:/2020-2021/II/aws/project/TechComeReact/e-commerce-app-react-native/src/screens/ForgetPasswordScreen/index.js"],"names":[],"mappings":"AAAA","sourcesContent":["export * from \"./ForgetPasswordScreen\";\r\n"]},"metadata":{},"sourceType":"module"}
