@@ -21,6 +21,7 @@ import {
   CategorySection,
   FloatButton,
   categories,
+  Market,
 } from './components';
 import Skeleton from '../../components/Loaders/SkeletonLoading';
 import Snackbar from '../../components/Notification/Snackbar';
@@ -71,6 +72,7 @@ export const HomeScreen = ({ navigation }) => {
             ListHeaderComponent={() => (
               <View style={styles.banner}>
                 <Carousel />
+                <Market />
               </View>
             )}
             scrollEventThrottle={1}
@@ -82,8 +84,8 @@ export const HomeScreen = ({ navigation }) => {
               ],
               { useNativeDriver: true },
             )}
-            data={categories}
-            keyExtractor={(item) => item.name}
+            data={categories}          
+            keyExtractor={(item) => item.name}         
             renderItem={({ item }) => (
               <CategorySection
                 name={item.name}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from \"./FinishResetPwScreen\";","map":{"version":3,"sources":["D:/2020-2021/II/aws/project/TechComeReact/e-commerce-app-react-native/src/screens/FinishResetPwScreen/index.js"],"names":[],"mappings":"AAAA","sourcesContent":["export * from \"./FinishResetPwScreen\";\r\n"]},"metadata":{},"sourceType":"module"}
