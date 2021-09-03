@@ -1,1 +1,0 @@
-{"ast":null,"code":"export * from \"./PreOrderScreen\";","map":{"version":3,"sources":["D:/2020-2021/II/aws/project/TechComeReact/e-commerce-app-react-native/src/screens/PreOrderScreen/index.js"],"names":[],"mappings":"AAAA","sourcesContent":["export * from \"./PreOrderScreen\";\r\n"]},"metadata":{},"sourceType":"module"}
