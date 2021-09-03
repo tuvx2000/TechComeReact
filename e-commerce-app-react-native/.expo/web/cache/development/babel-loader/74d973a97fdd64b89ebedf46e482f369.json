@@ -1,0 +1,1 @@
+{"ast":null,"code":"export * from \"./AppNavigator\";","map":{"version":3,"sources":["D:/2020-2021/II/aws/project/TechComeReact/e-commerce-app-react-native/src/navigation/index.js"],"names":[],"mappings":"AAAA","sourcesContent":["export * from \"./AppNavigator\";\r\n"]},"metadata":{},"sourceType":"module"}

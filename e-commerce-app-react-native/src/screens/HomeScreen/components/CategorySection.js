@@ -5,6 +5,7 @@ import {
   TouchableOpacity,
   FlatList,
   Image,
+  Button,
 } from "react-native";
 import { ProductItem } from "./ProductItem";
 import CustomText from "../../../components/UI/CustomText";
@@ -34,7 +35,27 @@ export class CategorySection extends React.PureComponent {
         <Image style={styles.background} source={bg} blurRadius={10} />
         <View style={styles.titleHeader}>
           <CustomText style={styles.title}>{name}</CustomText>
+          
         </View>
+        <View style={styles.container}>
+          
+          <TouchableOpacity style={styles.button}>
+            <CustomText style={styles.title}>Gia dụng</CustomText>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.button}>
+            <CustomText style={styles.title}>Thực phẩm</CustomText>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.button}>
+            <CustomText style={styles.title}>Bỉm sữa</CustomText>
+          </TouchableOpacity>
+
+          
+          
+          
+        </View>
+        
+        
         <View style={styles.productList}>
           <FlatList
             data={getItems()}
@@ -72,7 +93,7 @@ CategorySection.propTypes = {
 
 const styles = StyleSheet.create({
   category: {
-    height: 518,
+   // height: 800,
     marginHorizontal: 5,
     marginVertical: 5,
     paddingVertical: 15,
@@ -89,14 +110,20 @@ const styles = StyleSheet.create({
   },
   titleHeader: {
     marginHorizontal: 10,
-    marginBottom: 5,
     alignItems: "center",
     justifyContent: "center",
+    padding:3,
+    borderColor:"red",
+    borderWidth:2,
+    borderRadius:10
+   
   },
   title: {
     fontSize: 18,
     color: Colors.red,
     fontWeight: "500",
+   
+   
   },
   list: {
     justifyContent: "space-between",
@@ -118,4 +145,20 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: Colors.red,
   },
+  container: {
+    flexDirection:'row',
+    marginTop: 20,
+    marginLeft: 10,
+  },
+  button:{
+    paddingHorizontal: 8,
+    paddingVertical: 6,
+    borderRadius: 4,
+    backgroundColor: "oldlace",
+    alignSelf: "flex-start",
+    marginHorizontal: "1%",
+    marginBottom: 6,
+    minWidth: "20%",
+    textAlign: "center",
+  }
 });
