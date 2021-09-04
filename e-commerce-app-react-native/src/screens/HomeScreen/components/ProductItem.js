@@ -30,7 +30,7 @@ export class ProductItem extends React.PureComponent {
       navigation.navigate("Detail", { item });
     };
     return (
-      <View style={{ width: "48%" }}>
+      <View style={{ width: "30%" }}>
         <BlurView tint='light' intensity={70} style={styles.container}>
           <View
             style={{
@@ -67,12 +67,13 @@ export class ProductItem extends React.PureComponent {
           <View style={styles.center}>
             <CustomText style={styles.name}>{item.filename}</CustomText>
           </View>
-          <View style={styles.info}>
-            <View style={styles.rate}>
+          <View style={styles.rate}>
               <AntDesign name='star' color='#fed922' size={15} />
-              <AntDesign name='loading' color='#fed922' size={15} />
               <Text style={styles.score}>4.5</Text>
+              <Text style={styles.score}>Sàn: {foo}</Text>
+
             </View>
+          <View style={styles.info}>
             <NumberFormat price={item.price} />
           </View>
           <View style={{ marginHorizontal: 5 }}>
@@ -121,11 +122,15 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     marginHorizontal: 5,
     justifyContent: "space-between",
+    alignItems: "center",
+    justifyContent: "center",
   },
   rate: {
     flexDirection: "row",
     alignItems: "flex-end",
     paddingBottom: 2,
+    alignItems: "center",
+    justifyContent: "center",
   },
   score: {
     fontSize: 12,

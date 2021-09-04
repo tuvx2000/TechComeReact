@@ -6,6 +6,7 @@ import {
   Platform,
   FlatList,
   AsyncStorage,
+  RefreshControl,SafeAreaView,
 } from 'react-native';
 //Redux
 import { useSelector, useDispatch } from 'react-redux';
@@ -22,6 +23,8 @@ import {
   FloatButton,
   categories,
   Market,
+  
+
 } from './components';
 import Skeleton from '../../components/Loaders/SkeletonLoading';
 import Snackbar from '../../components/Notification/Snackbar';
@@ -32,13 +35,22 @@ const AnimatedFlatList = Animated.createAnimatedComponent(FlatList);
 const { height } = Dimensions.get('window');
 
 export const HomeScreen = ({ navigation }) => {
+  const [refreshing, setRefreshing] = React.useState(false);
+
   const dispatch = useDispatch();
   //Header Animation
   let scrollY = new Animated.Value(0);
+  const Ixd = useSelector((state) => state.auth.Ixd);
+
   const user = useSelector((state) => state.auth.user);
   const products = useSelector((state) => state.store.products);
   const isLoading = useSelector((state) => state.store.isLoading);
   const notification = useSelector((state) => state.auth.notification);
+
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    wait(0).then(() => setRefreshing(false));
+  }, []);
   //fetch Api
   useEffect(() => {
     // AsyncStorage.removeItem("isFirstTime");
@@ -70,9 +82,13 @@ export const HomeScreen = ({ navigation }) => {
             contentContainerStyle={styles.list}
             showsVerticalScrollIndicator={false}
             ListHeaderComponent={() => (
-              <View style={styles.banner}>
+              <View  style={styles.banner}>
+                
                 <Carousel />
-                <Market/>
+                <Market
+                  onPress={onRefresh}
+                  
+                />
               </View>
             )}
             scrollEventThrottle={1}

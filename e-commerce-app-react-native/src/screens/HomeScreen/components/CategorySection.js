@@ -37,22 +37,16 @@ export class CategorySection extends React.PureComponent {
           <CustomText style={styles.title}>{name}</CustomText>
           
         </View>
-        <View style={styles.container}>
-          
+        <View style={styles.container}>   
           <TouchableOpacity style={styles.button}>
             <CustomText style={styles.title}>Gia dụng</CustomText>
           </TouchableOpacity>
-
           <TouchableOpacity style={styles.button}>
             <CustomText style={styles.title}>Thực phẩm</CustomText>
           </TouchableOpacity>
           <TouchableOpacity style={styles.button}>
             <CustomText style={styles.title}>Bỉm sữa</CustomText>
-          </TouchableOpacity>
-
-          
-          
-          
+          </TouchableOpacity>   
         </View>
         
         
@@ -60,7 +54,7 @@ export class CategorySection extends React.PureComponent {
           <FlatList
             data={getItems()}
             keyExtractor={(item) => item._id}
-            numColumns={2}
+            numColumns={3}
             columnWrapperStyle={styles.list}
             renderItem={({ item }) => {
               return (

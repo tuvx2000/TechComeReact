@@ -13,7 +13,7 @@ export const FloatButton = () => {
       icon={open ? 'send' : 'square-edit-outline'}
       color='#fff'
       fabStyle={{
-        backgroundColor: Colors.blue,
+        backgroundColor: "#636e72",
         bottom: 10,
       }}
       actions={[

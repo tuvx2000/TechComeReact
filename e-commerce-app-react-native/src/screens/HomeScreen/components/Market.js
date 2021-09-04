@@ -2,11 +2,20 @@ import React from 'react';
 import { View,Image,StyleSheet, Button, TouchableOpacity } from 'react-native';
 
 export const Market = () => {
+  global.foo = "Lazada";
+  
   return (
     <View style={styles.container}>
-      <TouchableOpacity
+      <TouchableOpacity 
+          onPress={()=>
+            {
+              foo = "Lazada";
+              alert("you clicked Lazada")
+
+            }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
+          
           <Image
             source={{
               uri:
@@ -15,7 +24,13 @@ export const Market = () => {
             style={styles.buttonImageIconStyle}
           />
       </TouchableOpacity>
-      <TouchableOpacity
+      <TouchableOpacity 
+        onPress={()=>
+          {
+            foo = "Tiki"; 
+            alert("you clicked Tiki")
+
+          }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
           <Image
@@ -27,6 +42,11 @@ export const Market = () => {
           />
       </TouchableOpacity>
       <TouchableOpacity
+          onPress={()=>
+            {
+              foo = "Shoppee";
+              alert("you clicked Shoppee")
+            }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
           <Image
@@ -37,7 +57,12 @@ export const Market = () => {
             style={styles.buttonImageIconStyle}
           />
       </TouchableOpacity>
-      <TouchableOpacity
+      <TouchableOpacity 
+        onPress={()=>
+          {
+            foo = "Sendo";
+            alert("you clicked Sendo")
+          }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
           <Image
@@ -56,7 +81,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection:'row',
     marginTop: 20,
-    marginLeft: 10,
+    marginLeft: -10,
   },
   icon:{
     marginLeft:20,
