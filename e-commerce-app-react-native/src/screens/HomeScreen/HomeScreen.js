@@ -86,7 +86,7 @@ export const HomeScreen = ({ navigation }) => {
                 
                 <Carousel />
                 <Market
-                  onPress={onRefresh}
+                 
                   
                 />
               </View>

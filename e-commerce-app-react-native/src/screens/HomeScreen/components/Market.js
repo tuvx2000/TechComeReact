@@ -3,6 +3,11 @@ import { View,Image,StyleSheet, Button, TouchableOpacity } from 'react-native';
 
 export const Market = () => {
   global.foo = "Lazada";
+  const [refreshing, setRefreshing] = React.useState(false);
+  const onRefresh = React.useCallback(() => {
+    setRefreshing(true);
+    wait(0).then(() => setRefreshing(false));
+  }, []);
   
   return (
     <View style={styles.container}>
@@ -10,7 +15,8 @@ export const Market = () => {
           onPress={()=>
             {
               foo = "Lazada";
-              alert("you clicked Lazada")
+              alert("you clicked Lazada");
+              onRefresh();
 
             }}
           style={styles.buttonGPlusStyle}
@@ -29,6 +35,7 @@ export const Market = () => {
           {
             foo = "Tiki"; 
             alert("you clicked Tiki")
+            onRefresh();
 
           }}
           style={styles.buttonGPlusStyle}
@@ -46,6 +53,7 @@ export const Market = () => {
             {
               foo = "Shoppee";
               alert("you clicked Shoppee")
+              onRefresh();
             }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
@@ -62,6 +70,7 @@ export const Market = () => {
           {
             foo = "Sendo";
             alert("you clicked Sendo")
+            onRefresh();
           }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
