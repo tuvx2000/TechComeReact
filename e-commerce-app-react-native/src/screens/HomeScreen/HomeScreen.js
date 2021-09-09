@@ -63,6 +63,7 @@ export const HomeScreen = ({ navigation }) => {
     };
     fetching();
   }, [user.userid]);
+  //console.log(products)
 
   return (
     <Provider>

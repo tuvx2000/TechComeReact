@@ -23,6 +23,7 @@ export const fetchProducts = () => {
         throw new Error("Something went wrong!, can't get the products");
       }
       const resData = await response.json();
+      //console.log(resData)
       dispatch({
         type: FETCH_PRODUCTS,
         products: resData.content,
