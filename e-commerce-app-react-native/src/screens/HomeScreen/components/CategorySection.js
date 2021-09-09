@@ -18,18 +18,22 @@ export class CategorySection extends React.PureComponent {
   render() {
     // ở đây coi dữ liệu format ra răng
     const { data, name, bg, navigation } = this.props;
+    //console.log(data)
     const rings = data.filter((ring) => ring.type === "ring");
     const bracelets = data.filter((bracelet) => bracelet.type === "bracelet");
     const stones = data.filter((stone) => stone.type === "stone");
     function getItems() {
       const items =
-        name === "Vòng Thạch Anh"
+        name === "Danh mục sản phẩm"
           ? bracelets
-          : name === "Đá Ruby"
+          : name === "Danh mục sale"
           ? stones
-          : rings;
+          : name === "Danh mục bán chạy"
+          ? rings
+          : stones;
       return items;
     }
+    console.log(rings.splice(0,3))
     return (
       <View style={[styles.category]}>
         <Image style={styles.background} source={bg} blurRadius={10} />
