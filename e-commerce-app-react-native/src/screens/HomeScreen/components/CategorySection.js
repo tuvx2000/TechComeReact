@@ -33,7 +33,16 @@ export class CategorySection extends React.PureComponent {
           : stones;
       return items;
     }
-    console.log(rings.splice(0,3))
+    const seeMoreProduct = () =>{
+      //item=data[0]
+      //console.log(item)
+      
+      navigation.navigate("Product");
+
+    }
+    //console.log(rings.splice(3,rings.length-3))
+    //console.log(stones.splice(3,stones.length-3))
+    //console.log(bracelets.splice(3,bracelets.length-3))
     return (
       <View style={[styles.category]}>
         <Image style={styles.background} source={bg} blurRadius={10} />
@@ -72,7 +81,7 @@ export class CategorySection extends React.PureComponent {
           />
         </View>
         <TouchableOpacity
-          onPress={() => navigation.navigate("Product")}
+          onPress={seeMoreProduct}
           style={{ marginHorizontal: 10 }}
         >
           <BlurView tint="light" intensity={100} style={styles.seeMore}>
