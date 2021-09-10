@@ -1,6 +1,6 @@
 export const categories = [
   {
-    name: "Danh mục sản phẩm",
+    name: "Danh mục sản phẩm HOT!!!",
     bg: require("../../../assets/Images/bg1.jpg"),
   },
   {

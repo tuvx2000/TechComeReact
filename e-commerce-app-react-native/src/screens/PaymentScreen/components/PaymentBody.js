@@ -24,12 +24,12 @@ export const PaymentBody = ({ navigation, payByCard, setPayByCard, token }) => {
             }}
           />
           <MaterialCommunityIcons
-            name='cash'
-            size={40}
+            name='credit-card-outline'
+            size={35}
             color={Colors.lighter_green}
             style={{ marginLeft: 10 }}
           />
-          <CustomText style={styles.optionText}>Thanh toán tiền mặt</CustomText>
+          <CustomText style={styles.optionText}> Thanh toán trên F@st Mobile</CustomText>
         </View>
         <View style={styles.option}>
           <Checkbox
@@ -38,20 +38,18 @@ export const PaymentBody = ({ navigation, payByCard, setPayByCard, token }) => {
             onPress={() => navigation.navigate("AddCreditCardScreen")}
             // containerStyle={{ padding: 5 }}
           />
-          <MaterialCommunityIcons
-            name='credit-card-outline'
-            size={35}
+
+            <MaterialCommunityIcons
+            name='cash'
+            size={40}
             color={Colors.lighter_green}
             style={{ marginLeft: 10 }}
-          />
+          />        
           <View style={styles.cardContainer}>
             <CustomText style={{ ...styles.optionText, marginHorizontal: 0 }}>
-              Thanh toán bằng thẻ tín dụng
+              Thanh toán tiền mặt
             </CustomText>
-            <Image
-              style={styles.cardImage}
-              source={require("../../../assets/Images/creditcards.png")}
-            />
+            
             {payByCard && token ? (
               <View style={{ flexDirection: "row", alignItems: "center" }}>
                 <Entypo name='dots-two-horizontal' size={24} color='black' />
