@@ -32,7 +32,7 @@ export const DetailScreen = (props) => {
   useEffect(() => {
     const checkColor = async () => {
       const getColor = await colorCheck(type);
-      setColor(getColor);
+      setColor("#34495e");
     };
     checkColor();
   }, [item]);
@@ -53,7 +53,7 @@ export const DetailScreen = (props) => {
           { useNativeDriver: false },
         )}
       >
-        <DetailBody item={item} color={color} />
+        <DetailBody item={item} color={"red"} />
         <Comments />
       </Animated.ScrollView>
       <ActionButton

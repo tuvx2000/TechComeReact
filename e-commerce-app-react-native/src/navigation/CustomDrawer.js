@@ -104,27 +104,7 @@ export default (props) => {
         )}
         <View>
           <DrawerItemList state={newState} {...rest} />
-          <Drawer.Section style={styles.drawerSection}></Drawer.Section>
-          <View style={styles.social}>
-            <OpenURL url={fbURL}>
-              <Image
-                style={{ resizeMode: "contain", width: 80, height: 80 }}
-                source={require("../assets/Images/social1.png")}
-              />
-            </OpenURL>
-            <OpenURL url={youtubeURL}>
-              <Image
-                style={{ resizeMode: "contain", width: 80, height: 80 }}
-                source={require("../assets/Images/social3.png")}
-              />
-            </OpenURL>
-            <OpenURL url={fbURL}>
-              <Image
-                style={{ resizeMode: "contain", width: 80, height: 80 }}
-                source={require("../assets/Images/social2.png")}
-              />
-            </OpenURL>
-          </View>
+         
         </View>
       </DrawerContentScrollView>
       {Object.keys(user).length === 0 ? (
@@ -148,7 +128,7 @@ export default (props) => {
                   fontFamily: "Roboto-Medium",
                 }}
               >
-                Đăng xuất
+                Trở lại F@st Mobile
               </CustomText>
             </View>
           )}
@@ -161,7 +141,7 @@ export default (props) => {
             <CustomText
               style={{ color: Colors.grey, fontFamily: "Roboto-LightItalic" }}
             >
-              CatTuong App Version 1.0
+              F@st Market Version 1.0
             </CustomText>
           )}
         />

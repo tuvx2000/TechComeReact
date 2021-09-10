@@ -66,12 +66,12 @@ export const DetailBody = ({ item, color }) => {
           Chi tiết
         </CustomText>
         <View style={styles.infoContainer}>
-          <CustomText>Màu sắc: </CustomText>
-          <CustomText style={{ color: color }}>{item.color}</CustomText>
+          <CustomText>Tình trang: </CustomText>
+          <CustomText style={{  }}>Còn hàng</CustomText>
         </View>
         <View style={styles.infoContainer}>
-          <CustomText>Tình trạng: </CustomText>
-          <CustomText>{item.standard}</CustomText>
+          <CustomText>Sàn: </CustomText>
+          <CustomText >Lazada</CustomText>
         </View>
         <View style={styles.infoContainer}>
           <CustomText>Xuất xứ: </CustomText>

@@ -15,8 +15,8 @@ export const Market = () => {
           onPress={()=>
             {
               foo = "Lazada";
-              alert("you clicked Lazada");
-              onRefresh();
+              alert("you clicked " + foo);
+          //    onRefresh();
 
             }}
           style={styles.buttonGPlusStyle}
@@ -34,8 +34,8 @@ export const Market = () => {
         onPress={()=>
           {
             foo = "Tiki"; 
-            alert("you clicked Tiki")
-            onRefresh();
+            alert("you clicked " + foo)
+       //     onRefresh();
 
           }}
           style={styles.buttonGPlusStyle}
@@ -52,8 +52,8 @@ export const Market = () => {
           onPress={()=>
             {
               foo = "Shoppee";
-              alert("you clicked Shoppee")
-              onRefresh();
+              alert("you clicked " + foo)
+       //       onRefresh();
             }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
@@ -69,8 +69,8 @@ export const Market = () => {
         onPress={()=>
           {
             foo = "Sendo";
-            alert("you clicked Sendo")
-            onRefresh();
+            alert("you clicked " + foo)
+       //     onRefresh();
           }}
           style={styles.buttonGPlusStyle}
           activeOpacity={0.5}>
