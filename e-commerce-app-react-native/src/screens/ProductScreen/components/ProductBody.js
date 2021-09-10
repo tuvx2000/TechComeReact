@@ -24,6 +24,8 @@ export const ProductBody = ({
   productsFilter,
   searchFilterFunction,
 }) => {
+  //const { item } = props.route.params;
+  //console.log((props));
   const DATA = [];
   const bracelets = productsFilter.filter(
     (bracelet) => bracelet.type === 'bracelet',
@@ -32,7 +34,7 @@ export const ProductBody = ({
   const stones = productsFilter.filter((stone) => stone.type === 'stone');
   DATA.push({ title: 'Vòng Chuối Ngọc', data: bracelets });
   DATA.push({ title: 'Nhẫn Ruby', data: rings });
-  DATA.push({ title: 'Đá Quý', data: stones });
+  //DATA.push({ title: 'Đá Quý', data: stones });
   const scrollY = new Value(0);
   const sectionListRef = useRef(null);
   // const scrollToSection = (index) => {
